@@ -5,7 +5,10 @@ export default function RandomNumber (props) {
   const numAle = Math.round(Math.random() * (numFim - numIni) + numIni);
   return (
     <>
-      { numAle }
+    <h2>Números aleatórios</h2>
+    <p>Número inicial: { numIni }</p>
+    <p>Número final: { numFim }</p>
+      <p><strong>Resultado: { numAle } </strong></p>
     </>
   )
 }
