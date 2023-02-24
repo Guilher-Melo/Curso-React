@@ -6,18 +6,32 @@ import Primeiro from './components/basicos/Primeiro';
 import ComParametro from './components/basicos/ComParametros';
 import RandomNumber from "./components/basicos/RandomNumber";
 import Card from "./components/layouts/Card";
+import Familia from "./components/basicos/Familia";
+import FamiliaMembro from "./components/basicos/FamiliaMembro";
 
 
 export default () => (
   <div className="app">
     <h1>Fundamentos React</h1>
     <div className="cards">
+      <Card titulo="#04 - Componentes com filhos" color="#6495ED">
+        <Familia sobrenome= "Love">
+          <FamiliaMembro nome="Lucas"></FamiliaMembro>
+  
+          <FamiliaMembro nome ="Maria"></FamiliaMembro>
+          <FamiliaMembro nome="Vagner"></FamiliaMembro>
+        
+        </Familia>
+      </Card>
+
       <Card titulo="#03 - Desafio número aleatório" color="#090">
         <RandomNumber numIni={1} numFim={10} />
       </Card>
+
       <Card titulo="#02 - Testando parâmetros" color="#F9CB11">
         <ComParametro titulo="Análise dos alunos" nome="Joãozinho" nota={8.0} />
       </Card>
+
       <Card titulo="#01 - Primeiro componente" color="#F08080">
         <Primeiro />
       </Card>
