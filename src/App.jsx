@@ -10,12 +10,17 @@ import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import ListaALunos from "./components/repeticao/ListaAlunos";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
+import ParImpar from "./components/condicional/ParImpar";
 
 
 export default () => (
   <div className="app">
     <h1>Fundamentos React</h1>
     <div className="cards">
+
+    <Card titulo="#07 - Par ou Ímpar" color="#AA08B4">
+        <ParImpar numero={11} />
+      </Card>
 
       <Card titulo="#06 - Desfaio Repetição" color="#11F29">
         <TabelaProdutos />
