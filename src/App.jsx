@@ -8,19 +8,23 @@ import RandomNumber from "./components/basicos/RandomNumber";
 import Card from "./components/layouts/Card";
 import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
+import ListaALunos from "./components/repeticao/ListaAlunos";
 
 
 export default () => (
   <div className="app">
     <h1>Fundamentos React</h1>
     <div className="cards">
+
+      <Card titulo="#05 - Repetição" color="#11F969">
+        <ListaALunos />
+      </Card>
       <Card titulo="#04 - Componentes com filhos" color="#6495ED">
-        <Familia sobrenome= "Love">
+        <Familia sobrenome= "Ferreira">
           <FamiliaMembro nome="Lucas"></FamiliaMembro>
-  
           <FamiliaMembro nome ="Maria"></FamiliaMembro>
           <FamiliaMembro nome="Vagner"></FamiliaMembro>
-        
+          <FamiliaMembro nome="Estevão"></FamiliaMembro>
         </Familia>
       </Card>
 
