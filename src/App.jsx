@@ -12,6 +12,7 @@ import ListaALunos from "./components/repeticao/ListaAlunos";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
 import ParImpar from "./components/condicional/ParImpar";
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
+import DiretaPai from "./components/comunicacao/DiretaPai";
 
 
 export default () => (
@@ -19,7 +20,11 @@ export default () => (
     <h1>Fundamentos React</h1>
     <div className="cards">
 
-    <Card titulo="#07 - Par ou Ímpar" color="#AA08B4">
+    <Card titulo="#08 - Comunicação direta" color="#73332E">
+       <DiretaPai />
+      </Card>
+
+    <Card titulo="#07 - Condicional" color="#AA08B4">
         <ParImpar numero={11} />
         <UsuarioInfo usuario={{ nome: 'Guilherme'}} />
         <UsuarioInfo usuario={{}} />
