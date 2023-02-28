@@ -11,6 +11,7 @@ import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import ListaALunos from "./components/repeticao/ListaAlunos";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
 import ParImpar from "./components/condicional/ParImpar";
+import UsuarioInfo from "./components/condicional/UsuarioInfo";
 
 
 export default () => (
@@ -20,6 +21,9 @@ export default () => (
 
     <Card titulo="#07 - Par ou Ímpar" color="#AA08B4">
         <ParImpar numero={11} />
+        <UsuarioInfo usuario={{ nome: 'Guilherme'}} />
+        <UsuarioInfo usuario={{}} />
+        <UsuarioInfo />
       </Card>
 
       <Card titulo="#06 - Desfaio Repetição" color="#11F29">
