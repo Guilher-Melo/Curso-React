@@ -16,6 +16,7 @@ import DiretaPai from "./components/comunicacao/DiretaPai";
 import IndiretaPai from "./components/comunicacao/IndiretaPai";
 import Input from "./components/formulario/input";
 import Contador from "./components/contador/Contador";
+import NumerosAleatorios from "./components/Mega/NumerosAleatorios";
 
 
 export default () => (
@@ -23,6 +24,9 @@ export default () => (
     <h1>Fundamentos React</h1>
     <div className="cards">
 
+    <Card titulo="#12 - Mega" color="#07393c">
+       <NumerosAleatorios  />
+      </Card>
     <Card titulo="#11 - Componente classe Contador" color="#7a28cb">
        <Contador numeroInicial = {5} />
       </Card>
