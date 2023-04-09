@@ -51,4 +51,4 @@ const UseContext = (props) => {
     )
 }
 
-export default UseContext
+export default UseContext;
