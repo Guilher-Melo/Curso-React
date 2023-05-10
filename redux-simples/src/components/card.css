@@ -1,0 +1,33 @@
+.card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.card .header {
+  display: flex;
+  justify-content: center;
+
+}
+
+.card .header .title {
+  padding: 5px;
+  flex: 1;
+}
+
+.card .content {
+  padding: 20px;
+}
+
+.card.red .header {color: #fff; background-color: #c62828;}
+.card.red .content {background-color: #f44336;}
+
+.card.green .header {color: #fff; background-color: #2e7d32;}
+.card.green .content {background-color: #4caf50;}
+
+.card.purple .header {color: #fff; background-color: #6A1B9A;}
+.card.purple .content {background-color: #9c27b0;}
+
+.card.blue .header {color: #fff; background-color: #1565c0;}
+.card.blue .content {background-color: #2196f3;}
